@@ -16,7 +16,7 @@ Since this is a binary classification problem, I mainly used decison tree classi
 To evaluate whether a model is fitting for this project,both precision and recall scores should be maximised, but seeing that costs are likely higher for failing to recognize a churning customer compared to misidenitifying a staying customer as a churning one, I will be using recall as my main metric.
 
 ### The final model
-After experimenting with a few different models,I have found that random forests with the default metrics yield the best results, with the highest score in both precision and recall. Here are couple of images to vizualise its perfomrance on unseen data.
+After experimenting with a few different models,I have found that random forests with the default metrics yield the best results, with the highest score in both precision and recall. Here are couple of images to vizualise its perfomrance on unseen data. <br>
 ![Confusion Matrix](conf.png) 
 ![recall](recall.png) <br>
 As shown above, the false negative rate is still less than ideal, with the model only being able to identify roughly 76% of churning customers. Morever, it identifies staying customers almost perfectly, taking into account class imbalance, it is a 13% improvement on precision compared to an algorithm that assumes a customer will not churn 100% of the time. Therefore, while this model has much room for improvement, it is still not a bad model for prediction.
