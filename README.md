@@ -26,5 +26,5 @@ I would advise SyriaTel to use this model's predictions to contact customers ide
 Moreover, it would be useful to evaluate the associated costs with assuming a staying customer will churn versus assuming a churning customer will stay, and adjust the decision threshold of the model accordingly.
 
 ### Next steps
-The reason this model does not have a high recall score might be due to the class imbalance of the dataset, with the data on churning customers being less than 15% of the total data set. To improve the predictive ability of this model, I would collect more data points such that the data would be more generalizable to future unseen data.
+The reason this model does not have a high recall score might be due to the class imbalance of the dataset, with the data on churning customers being less than 15% of the total data set. Moreover, using tools like SMOTE in an attempt to counteract the imbalance was not effective, presumeably due to the high variance in the dataset such that the created data was not representative of unseen data. To improve the predictive ability of this model, I would collect more data points on the minority class such that the data would be more generalizable to future unseen data.
 
