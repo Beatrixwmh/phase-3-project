@@ -28,3 +28,15 @@ Moreover, it would be useful to evaluate the associated costs with assuming a st
 ### Next steps
 The reason this model does not have a high recall score might be due to the class imbalance of the dataset, with the data on churning customers being less than 15% of the total data set. Moreover, using tools like SMOTE in an attempt to counteract the imbalance was not effective, presumeably due to the high variance in the dataset such that the created data was not representative of unseen data. To improve the predictive ability of this model, I would collect more data points on the minority class such that the data would be more generalizable to future unseen data.
 
+### For More Information 
+Please review our full analysis in [the github repository](./phase-3-project) or my [presentation]().\
+For any additional questions, please contact **Beatrix Wong, beatrix.wmh@hotmail.com**
+
+## Repository Structure
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── phase_3_proj.ipynb                  <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data.csv                            <- Both sourced externally and generated from code
+└── images (.png)                       <- Both sourced externally and generated from code
+```
