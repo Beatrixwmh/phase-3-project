@@ -20,7 +20,10 @@ To evaluate whether a model is fitting for this project,both precision and recal
 After experimenting with a few different models,I have found that random forests with the default metrics yield the best results, with the highest score in both precision and recall. Here are couple of images to vizualise its perfomrance on unseen data. <br>
 ![Confusion Matrix](conf.png) 
 ![recall](recall.png) <br>
-As shown above, the false negative rate is still less than ideal, with the model only being able to identify roughly 76% of churning customers. Morever, it identifies staying customers almost perfectly, taking into account class imbalance, it is a 13% improvement on precision compared to an algorithm that assumes a customer will not churn 100% of the time. Therefore, while this model has much room for improvement, it is still not a bad model for prediction.
+As shown above, the false negative rate is still less than ideal, with the model only being able to identify roughly 76% of churning customers. Morever, it identifies staying customers almost perfectly, taking into account class imbalance, it is a 13% improvement on precision compared to an algorithm that assumes a customer will not churn 100% of the time. Therefore, while this model has much room for improvement, it is still not a bad model for prediction. <br>
+Lastly, I will investigate the feature impotances of this model to see which features are the most useful for predicting churn. <br>
+![feature importance](fm.png) <br>
+It seems like total day charge and customer service calls are the two most important featrues.
 
 ### Recommnedations
 I would advise SyriaTel to use this model's predictions to contact customers identied as at-risk of terminating their contract, maybe sending out surveys to find out the priamry factors of thier dissatisfaction, or offer them discounts to improve customer retention, all the while keeping the shortcomings of this model in mind, namely its tendency to be overly trusting of customers. <br>
