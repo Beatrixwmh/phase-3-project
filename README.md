@@ -26,7 +26,8 @@ Lastly, I will investigate the feature impotances of this model to see which fea
 It seems like total day charge and customer service calls are the two most important featrues.
 
 ### Recommnedations
-I would advise SyriaTel to use this model's predictions to contact customers identied as at-risk of terminating their contract, maybe sending out surveys to find out the priamry factors of thier dissatisfaction, or offer them discounts to improve customer retention, all the while keeping the shortcomings of this model in mind, namely its tendency to be overly trusting of customers. <br>
+Based on the feature importances of the model, I would recommend the compnay to offer discounts to customers that have relatively high day charges, since the amount they were charged seems to be positively correlated to churning rate, moreover, it would be wise to pay close attention to customer service calls and record the content of complaints. As churning customers contact customer service the most frequently, this would help in understanding where their dissatisfaction lies and in turn give us pointers on how to improve service in order to increase customer retention rate. <br>
+On a more general note, I would advise SyriaTel to use this model's predictions to contact customers identied as at-risk of terminating their contract, maybe sending out surveys to find out the priamry factors of thier dissatisfaction, or offer them discounts to improve customer retention, all the while keeping the shortcomings of this model in mind, namely its tendency to be overly trusting of customers. <br>
 Moreover, it would be useful to evaluate the associated costs with assuming a staying customer will churn versus assuming a churning customer will stay, and adjust the decision threshold of the model accordingly.
 
 ### Next steps
